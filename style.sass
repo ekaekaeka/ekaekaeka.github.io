@@ -1,0 +1,167 @@
+@charset "utf-8"
+
+// Basit Reset
+ul,li,a,form,textarea
+  padding : 0
+  margin : 0
+  list-style-type: none
+  list-style:none
+  resize : none
+a
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration : none
+// @import "app.sass"
+@import url(css/fonts.css)
+
+// mixin
+=border-radius($border-radius)
+  -webkit-border-radius: $border-radius
+  -moz-border-radius:    $border-radius
+  -ms-border-radius:     $border-radius
+  border-radius:         $border-radius
+
+=border($border)
+  -webkit-border: $border
+  -moz-border:    $border
+  -ms-border:     $border
+  border:         $border
+
+=border-color($border-color)
+  -webkit-border-color : $border-color
+  -moz-border-color    : $border-color
+  -ms-border-color     : $border-color
+  border-color         : $border-color
+
+=box-shadow($box-shadow)
+  -webkit-box-shadow : $box-shadow
+  -moz-box-shadow    : $box-shadow
+  -ms-box-shadow     : $box-shadow
+  box-shadow         : $box-shadow
+
+=box-shadow-2($box-shadow-1,$box-shadow-2)
+	-webkit-box-shadow : $box-shadow-1,$box-shadow-2
+	-moz-box-shadow    : $box-shadow-1,$box-shadow-2
+	-ms-box-shadow     : $box-shadow-1,$box-shadow-2
+	box-shadow         : $box-shadow-1,$box-shadow-2
+
+=outline($outline)
+  -webkit-outline: $outline
+  -moz-outline:    $outline
+  -ms-outline:     $outline
+  outline:         $outline
+
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition:    $transition
+	-ms-transition:     $transition
+	transition:         $transition
+
+=transform($transform)
+	-webkit-transform: $transform
+	-moz-transform:    $transform
+	-ms-transform:     $transform
+	transform:         $transform
+
+// Libs
+$up : uppercase
+$low : lowercase
+$int : inherit
+$cap : capitalize
+$box-shadow-z-1 : 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+$box-shadow-z-2 : 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+$box-shadow-z-3 : 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
+$box-shadow-z-4 : 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)
+$box-shadow-z-5 : 0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)
+
+// Colors
+$tr : transparent
+$f  : #ffffff
+$main-color : #61ce70
+// Fonts
+$font1-regular : "Lora"
+$font2-bold : "Poppins"
+$font2-semibold : "Poppins SemiBold"
+body
+  background : 
+    image : url(img/background.png)
+    repeat : no-repeat
+    size : cover
+    position : top center
+  .date
+    font : 19px $font1-regular
+    color: $f
+    text-transform : capitalize
+    text-align : center
+    margin-top : 100px
+    z-index: 999
+  .welcome-text
+    font : 89px/89px $font2-bold
+    font-weight : 700
+    text-align : center
+    color : $f
+    // margin-top : 
+    width : 1124px
+    margin : 70px auto
+  .btn
+    position: relative
+    width : 265px
+    height : 59px
+    +border-radius(1000px)
+    background : $main-color
+    +border(0)
+    +outline(0)
+    +box-shadow(none)
+    font : 19px $font2-semibold
+    line-height : 59px
+    text-align : center
+    text-decoration : none
+    color : $f
+    font-weight: 400
+    margin : 0 auto
+    display : block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

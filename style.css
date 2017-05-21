@@ -1,0 +1,68 @@
+@import url(css/fonts.css);
+ul, li, a, form, textarea {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style: none;
+  resize: none;
+}
+
+a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+body .date {
+  font: 19px "Lora";
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 999;
+}
+
+body .welcome-text {
+  font: 89px/89px "Poppins";
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  width: 1124px;
+  margin: 70px auto;
+}
+
+body .btn {
+  position: relative;
+  width: 265px;
+  height: 59px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  border-radius: 1000px;
+  background: #61ce70;
+  -webkit-border: 0;
+  -moz-border: 0;
+  -ms-border: 0;
+  border: 0;
+  -webkit-outline: 0;
+  -moz-outline: 0;
+  -ms-outline: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  font: 19px "Poppins SemiBold";
+  line-height: 59px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 auto;
+  display: block;
+}
